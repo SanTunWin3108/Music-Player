@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    user-select: none;
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color:  blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 1em;
+    font-size: 3em;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.playListContainer {
+    margin-top: 1em;
+}
+
+.track {
+    background-color: white;
+    width: 320px;
+    text-align: center;
+    margin: 10px 0;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .2s ease;
+    color: crimson;
+}
+
+.trackStyle {
+    background-color: crimson;
+    color: white;
+}
+
+.track:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.currentAndTotalTime {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+.progressBar {
+    width: 320px;
+    height: 5px;
+    background-color: darkgray;
+    margin-bottom: 2em;
+}
+
+.currentProgress {
+    width: 0;
+    background-color: crimson;
+    height: 100%;
+}
+
+.previousBtn {
+    width: 33px;
+    height: 33px;
+}
+
+.pauseBtn {
+    display: none;
+}
+
+.playBtn {
+    display: inline-block;
+}
+
+.btn {
+    margin: 0 20px;
+}
+
+@media (max-width: 450px) {
+    .mainContainer {
+        width: 100vw;
+    }
+
+    .track {
+        width: 80vw;
+    }
+
+    h1 {
+        letter-spacing: 0;
+        font-size: 2.8em;
+        margin-top: 0.4em;
+    }
+
+    .progressBar {
+        width: 80vw;
+    }
+
+    .playListContainer {
+        margin-top: 0.5em;
+    }
+
+    .currentAndTotalTime {
+        margin: 15px 0;
+    }
+
+}
+
